@@ -16,7 +16,8 @@ Route::get('/', '\App\Http\Controller\WebScrapperController@index');
 
 Route::post('edit/{id}', '\App\Http\Controller\WebScrapperController@update');
 Route::get('edit/{id}', '\App\Http\Controller\WebScrapperController@edit');
-Route::delete('delete/{id}', '\App\Http\Controller\WebScrapperController@delete');
+Route::get('delete/{id}', '\App\Http\Controller\WebScrapperController@delete');
+Route::get('collect_rss', '\App\Http\Controller\WebScrapperController@collect_rss');
 
 
 
